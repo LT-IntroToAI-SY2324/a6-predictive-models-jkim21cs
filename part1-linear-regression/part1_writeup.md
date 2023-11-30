@@ -12,4 +12,4 @@ After completing `a6_part1.py` answer the following questions
 
 3. How accurate do you think this model's predictions are?  Do you think this model is accurate enough to reliably predict someone's blood pressure based on their age?  Why or why not?  And if not, what could improve the model?
 
-    I think that 
+    I think there might be variations between the model's predictions and reality only because the data set is limited to 13 points. If the sample size was much bigger, ie 10,000 people the confidence of predictions made would definitely be higher. 
