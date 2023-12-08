@@ -5,7 +5,7 @@ After completing `a6_part1.py` answer the following questions
 ## Questions to answer
 
 1. What is the r squared value?  What does this say about this lenear regression model?
-    The r squared value is about 0.626, meaning that there is likely a  correlation between age and blood pressure.
+     The r squared value is about 0.626, meaning that there is likely a  correlation between age and blood pressure.
 
 2. According to your model, what is the predicted systolic blood pressure for a person iwho is 43 years old?
     The predicted systlic blood pressure for a person who is 43 years old is about 137.
