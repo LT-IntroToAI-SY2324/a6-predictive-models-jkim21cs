@@ -37,11 +37,23 @@ print("Testing Results:")
 print("")
 print(y_test)
 for index in range(len(x_test)):
- x = x_test[index]
- x = x.reshape(-1, 3)
- y_pred = "Not Purchased" if not model.predict(x)[0] else "Purchased"
- actual = "Not Purchased" if not y_test[index] else "Purchased"
- print("Predicted Outcome: " + y_pred + "; Actual Outcome: " + actual + ";\n")
+    x = x_test[index]
+    x = x.reshape(-1, 3)
+    y_pred = "Not Purchased" if not model.predict(x)[0] else "Purchased"
+    actual = "Not Purchased" if not y_test[index] else "Purchased"
+    print("Predicted Outcome: " + y_pred + "; Actual Outcome: " + actual + ";\n")
+
+    if y_pred == 0:
+        y_pred = "Not Purchased"
+    else:
+        y_pred = "Purchased"
+    
+    actual=y_test[index]
+    if actual == 0:
+        actual = "Not Purchased"
+    else:
+        actual = "Purchased"
+        
 
 my_data = model.predict([[34, 56000, 1]])
 my_scaled_data=scaler.transform(my_data)
